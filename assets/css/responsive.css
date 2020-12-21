@@ -1,6 +1,9 @@
 
 
 @media (max-width: 1200px) {
+    #select-route .select-route_slider img {
+        height: 370px;
+    }
     #select-route .box {
         padding: 30px 20px 30px 20px
     }
@@ -60,8 +63,18 @@
         width: 75px;
         height: 75px;
     }
+    #will-interest .interest_box {
+        margin-bottom: 12px;
+        height: 650px;
+    }
 }
 @media (max-width: 991px) {
+    #select-route .select-route_slider {
+        margin-top: 20px;
+    }
+    #select-route .select-route_slider img {
+        height: 392px;
+    }
     #gallery-route .tabs__caption li {
         margin: 0 12px;
     }
@@ -137,7 +150,14 @@
     #reviews .owl-carousel .owl-nav button.owl-prev {
         left: -4%;
     }
-
+    #will-interest .interest_box .interest_info .interest-info_footer .price-box {
+        display: flex;
+        height: 89px;
+        align-items: flex-end;
+    }
+    #will-interest .interest_box .interest_info .interest-info_footer .description {
+        margin-bottom: 0;
+    }
     #gallery-route .route-info .title {
         font-size: 18px;
         margin-bottom: 10px;
@@ -362,6 +382,13 @@
     .mfp-content {
         padding: 30px 0;
     }
+    #will-interest .row {
+        justify-content: center;
+    }
+    #will-interest .interest_box {
+        height: auto;
+        margin-bottom: 12px;
+    }
     /*second html styles start*/
     #airfields .airfield_info {
         padding: 40px 0 45px 0;
@@ -373,6 +400,18 @@
     }
 }
 @media (max-width: 480px) {
+    #select-route {
+        padding: 0 0 40px 0;
+    }
+    #select-route .select-route_slider img {
+        height: 300px;
+    }
+    #select-route .section-title-wrap {
+        margin-bottom: 10px;
+    }
+    #main_offer {
+        padding: 25px 0 31px 0;
+    }
     #main_offer .main_offer-box {
         background: url("../images/mainoffer-bg-mobile.png")no-repeat;
         background-size: cover;

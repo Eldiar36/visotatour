@@ -47,6 +47,15 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
+    $(".select-route_slider").owlCarousel({
+        items: 1,
+        loop:true,
+        margin:0,
+        nav:true,
+        dots:false,
+    });
+});
+$(document).ready(function(){
     $('.content_toggle').click(function(){
         $('.content_block').toggleClass('hide');
         if ($('.content_block').hasClass('hide')) {
@@ -88,17 +97,19 @@ $(document).ready(function(){
     })(jQuery);
 })(jQuery);
 
+
 let bigImg = document.querySelector('.full-img');
 let subImg = document.querySelector('.preview-img').getElementsByTagName("img");
 
-for (let i = 0; i < subImg.length; i ++) {
-    subImg[i].addEventListener("click", full);}
-function full() {
-    let imgSrc = this.getAttribute('src');
+ for (let i = 0; i < subImg.length; i ++) {
+     subImg[i].addEventListener("click", full);}
+ function full() {
+     let imgSrc = this.getAttribute('src');
 
     bigImg.innerHTML = "<img  src="+imgSrc+">";
-    /*bigImg.style.height= "330"*/
-}
+     /!*bigImg.style.height= "330"*!/
+ }
+
 $(document).ready(function(){
     $(".preview-img").owlCarousel({
         items: 4,
@@ -127,9 +138,12 @@ jQuery(document).ready(function($) {
 
     });
 });
+
+
+
 var element = document.getElementById('phone');
 var maskOptions = {
     mask: '+7(000)000-00-00',
     lazy: false
-}
+};
 var mask = new IMask(element, maskOptions);

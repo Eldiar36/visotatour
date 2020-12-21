@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="56" viewBox="0 0 32 56">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 49px;
+        fill: #8c8c8c;
+        font-family: FontAwesome;
+      }
+
+      .cls-2 {
+        font-family: Roboto;
+        font-weight: 200;
+      }
+    </style>
+  </defs>
+  <text id="_копия" data-name="   копия" class="cls-1" transform="matrix(-2, 0, 0, 2, 34.489, 59.999)"> <tspan class="cls-2"> </tspan></text>
+</svg>
