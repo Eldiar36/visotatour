@@ -1155,8 +1155,8 @@ input.radio_input:not(:checked) + label:after {
  #helicopters .owl-carousel .owl-nav button.owl-prev  span {
     display: none;
 }
-.tabs .owl-carousel .owl-nav button.owl-next span ,
-.tabs .owl-carousel .owl-nav button.owl-prev  span {
+ .owl-carousel .owl-nav button.owl-next span ,
+  .owl-carousel .owl-nav button.owl-prev  span {
     display: none;
 }
  .tabs__content_two {
