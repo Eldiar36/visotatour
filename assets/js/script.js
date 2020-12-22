@@ -97,7 +97,7 @@ $(document).ready(function(){
     })(jQuery);
 })(jQuery);
 
-
+/*let a = */
 
 $(document).ready(function(){
     $(".preview-img").owlCarousel({
@@ -173,7 +173,6 @@ function full5() {
     bigImg5.innerHTML = "<img  src="+imgSrc+">";
 
 }
-
 });
 jQuery(document).ready(function($) {
     $('.popup-with-form').magnificPopup({
@@ -182,9 +181,6 @@ jQuery(document).ready(function($) {
 
     });
 });
-
-
-
 var element = document.getElementById('phone');
 var maskOptions = {
     mask: '+7(000)000-00-00',
