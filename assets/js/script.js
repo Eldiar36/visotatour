@@ -98,17 +98,6 @@ $(document).ready(function(){
 })(jQuery);
 
 
-let bigImg = document.querySelector('.full-img');
-let subImg = document.querySelector('.preview-img').getElementsByTagName("img");
-
- for (let i = 0; i < subImg.length; i ++) {
-     subImg[i].addEventListener("click", full);}
- function full() {
-     let imgSrc = this.getAttribute('src');
-
-    bigImg.innerHTML = "<img  src="+imgSrc+">";
-     /!*bigImg.style.height= "330"*!/
- }
 
 $(document).ready(function(){
     $(".preview-img").owlCarousel({
@@ -130,6 +119,61 @@ $(document).ready(function(){
         }
 
     });
+let bigImg = document.querySelector('.full-img');
+let subImg = document.querySelector('.preview-img').getElementsByTagName("img");
+
+ for (let i = 0; i < subImg.length; i ++) {
+     subImg[i].addEventListener("click", full);
+ }
+ function full() {
+     let imgSrc = this.getAttribute('src');
+    bigImg.innerHTML = "<img  src="+imgSrc+">";
+ }
+let bigImg2 = document.querySelector('.sync2');
+let subImg2 = document.querySelector('.sync21').getElementsByTagName("img");
+
+for (let i = 0; i < subImg2.length; i ++) {
+    subImg2[i].addEventListener("click", full2);
+}
+function full2() {
+    let imgSrc = this.getAttribute('src');
+    bigImg2.innerHTML = "<img  src="+imgSrc+">";
+
+}
+let bigImg3 = document.querySelector('.sync3');
+let subImg3 = document.querySelector('.sync31').getElementsByTagName("img");
+
+for (let i = 0; i < subImg3.length; i ++) {
+    subImg3[i].addEventListener("click", full3);
+}
+function full3() {
+    let imgSrc = this.getAttribute('src');
+    bigImg3.innerHTML = "<img  src="+imgSrc+">";
+
+}
+let bigImg4 = document.querySelector('.sync4');
+let subImg4 = document.querySelector('.sync41').getElementsByTagName("img");
+
+for (let i = 0; i < subImg4.length; i ++) {
+    subImg4[i].addEventListener("click", full4);
+}
+function full4() {
+    let imgSrc = this.getAttribute('src');
+    bigImg4.innerHTML = "<img  src="+imgSrc+">";
+
+}
+let bigImg5 = document.querySelector('.sync5');
+let subImg5 = document.querySelector('.sync51').getElementsByTagName("img");
+
+for (let i = 0; i < subImg5.length; i ++) {
+    subImg5[i].addEventListener("click", full5);
+}
+function full5() {
+    let imgSrc = this.getAttribute('src');
+    bigImg5.innerHTML = "<img  src="+imgSrc+">";
+
+}
+
 });
 jQuery(document).ready(function($) {
     $('.popup-with-form').magnificPopup({

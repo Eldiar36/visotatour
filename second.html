@@ -10,6 +10,8 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,7 +38,7 @@
                             <img src="assets/images/starcopy2.png" alt="">
                         </div>
                     </div>
-                    <a href="#" class="button1">Забронировать</a>
+                    <a href="#popup" class="button1 popup-with-form">Забронировать</a>
                 </div>
             </div>
         </section>
@@ -211,10 +213,10 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="helicopter_img">
-                                        <div class="full-img">
+                                        <div class="full-img sync2">
                                             <img src="assets/images/route1/3.jpg" alt="">
                                         </div>
-                                        <div  class="preview-img d-flex owl-carousel owl-theme">
+                                        <div  class="preview-img sync21 d-flex owl-carousel owl-theme">
                                             <img src="assets/images/route1/2.jpg" alt="">
                                             <img src="assets/images/route1/3.jpg" alt="">
                                             <img src="assets/images/route1/4.jpg" alt="">
@@ -287,11 +289,187 @@
                 <a href="index.html" class="button1">Вернуться к выбору прогулок</a>
             </div>
         </section>
+        <div id="popup" class="white_popup_block mfp-hide">
+            <h2 class="popup-title">
+                забронировать прогулку на вертолете
+            </h2>
+            <div class="wrapper">
+                <div class="left-col">
+                    <div class="contacts_data">
+                        <p class="box-title first">
+                            Контактные данные
+                        </p>
+                        <form action="">
+                            <div class="row form_row">
+                                <div class="col-lg-6 col-md-12">
+                                    <label class="title"  for="name">Имя</label>
+                                    <input class="input_text" type="text" id="name" name="name"
+                                           placeholder="Константин Дмитриевич" required>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <label  class="title" for="phone">Контактный телефон</label>
+                                    <input class="input_text" type="tel" id="phone" placeholder="+7 (___)___-__-__" name="phone" required>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <label  class="title" for="gmail">Электронная почта</label>
+                                    <input class="input_text third" type="email" id="gmail" name="gmail"
+                                           placeholder="konstantin1980@gmail.com" required>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="box_polityc">
+                                        <div class="checkbox-wrap d-flex align-items-center">
+                                            <input type="checkbox" id="check1" class="checkbox" >
+                                            <span class="checkbox-toggle">
+                                            </span>
+
+                                        </div>
+                                        <p class="polityc">Я согласен <a href="#">
+                                            с политикой <br> обработки персональных <br> данных
+                                        </a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="fly-details">
+                        <p class="box-title first">
+                            Детали полета
+                        </p>
+                        <div class="row form_row">
+                            <div class="col-lg-6">
+                                <form action="">
+                                    <label  class="title" for="name">Дата и время</label>
+                                    <div class="select">
+                                        <input class="select__input" type="hidden" name="name" required>
+                                        <div class="select__head first">24.11.2020 <span style="margin-left: 40px;"> 10:00</span></div>
+                                        <ul class="select__list" style="display: none;">
+                                            <li class="select__item">24.11.2020 <span style="margin-left: 40px;"> 11:00</span></li>
+                                            <li class="select__item">24.11.2020 <span style="margin-left: 40px;">12:00</span></li>
+                                        </ul>
+                                    </div>
+                                    <label  class="title" for="name">Кол-во человек</label>
+                                    <div class="select">
+                                        <input class="select__input" type="hidden" name="">
+                                        <div class="select__head">3 чел.</div>
+                                        <ul class="select__list" style="display: none;">
+                                            <li class="select__item">4 чел.</li>
+                                            <li class="select__item">6 чел.</li>
+                                        </ul>
+                                    </div>
+                                    <label  class="title" for="name">Номер маршрута</label>
+                                    <div class="select">
+                                        <input class="select__input" type="hidden" name="">
+                                        <div class="select__head">Маршрут №5</div>
+                                        <ul class="select__list" style="display: none;">
+                                            <li class="select__item">Маршрут №3</li>
+                                            <li class="select__item">Маршрут №2</li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-6 time-box ">
+                                <label for="name" class="title">Дата и время</label>
+                                <div class="time">
+                                    <div>
+                                        <input type="radio" class="radio_input" name="rb" id="rb6" checked>
+                                        <label for="rb6">15 мин  <span>12 000 руб</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="radio_input" name="rb" id="rb7">
+                                        <label for="rb7">30 мин  <span>18 000 руб</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="radio_input" name="rb" id="rb8">
+                                        <label for="rb8">40 мин  <span>24 000 руб</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="radio_input" name="rb" id="rb9">
+                                        <label for="rb9">50 мин  <span>30 000 руб</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="radio_input" name="rb" id="rb10">
+                                        <label for="rb10">60 мин  <span>36 000 руб</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <div class="services">
+                        <p class="box-title">
+                            Дополнительные услуги
+                        </p>
+                        <form action="">
+                            <div>
+                                <input type="checkbox" class="radio_input" name="rb" id="rb11"checked >
+                                <label for="rb11">Подарочный сертификат (доставка
+                                    в пределах МКАД)     <strong>+500 руб.</strong></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="radio_input" name="rb" id="rb12" >
+                                <label for="rb12">Плакат-поздравление <br>
+                                    на земле       <strong>+1 500 руб.</strong></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="radio_input" name="rb" id="rb13" checked >
+                                <label for="rb13">Съемка на камеру GoPro    <strong> +1 500 руб.</strong></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="radio_input" name="rb" id="rb14" >
+                                <label for="rb14">Воздушные шары *</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="radio_input" name="rb" id="rb15" >
+                                <label for="rb15">Фотосессия с техникой *</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="radio_input" name="rb" id="rb16"checked >
+                                <label for="rb16">Трансфер от/до клуба *</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="radio_input" name="rb" id="rb17" >
+                                <label for="rb17">Букет цветов на выбор *</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="radio_input" name="rb" id="rb18" >
+                                <label for="rb18">Букет цветов на выбор *</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="radio_input" name="rb" id="rb19" >
+                                <label for="rb19">Фуршет в беседке *</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="radio_input" name="rb" id="rb20" >
+                                <label for="rb20">Видео для Instagram *</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="radio_input" name="rb" id="rb21" >
+                                <label for="rb21">2 красные дымовые шашки *</label>
+                            </div>
+                        </form>
+                        <p class="prompt_text">
+                            Точная стоимость опции зависит <br> от ваших пожеланий и уточняется после <br> обсуждения
+                            с нашим менеджером
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="the_outcome d-flex">
+                <p class="price">
+                    от <span>79 990</span> руб.
+                </p>
+                <a href="#" class="button1">Забронировать</a>
+                <a href="#" class="mobile-back">Вернуться к выбору маршрута</a>
+            </div>
+        </div>
 
     </main><script src="https://unpkg.com/imask"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
             crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
