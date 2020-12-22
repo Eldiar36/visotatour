@@ -481,7 +481,7 @@
         flex-direction: column;
         justify-content: center;
     }
-    #select-route .box .btn-box a:first-child {
+    #select-route .box .btn-box .button1:first-child {
         margin-right: 0;
         margin-bottom: 15px;
     }
