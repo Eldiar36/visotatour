@@ -501,7 +501,7 @@ input.radio_input:not(:checked) + label:after {
     line-height: 25px;
 }
 #company-description  .section-title-wrap{
-    margin-bottom: 3px;
+    margin-bottom: 32px;
 }
 #company-description .text-box .item {
     margin-bottom: 25px;
@@ -1238,6 +1238,7 @@ input.radio_input:not(:checked) + label:after {
     z-index: 598;
     padding: 33px 27px 52px 35px;
 }
+
 .white_popup_block .popup-title {
     font-size: 27px;
     font-family: "BebasNeueBold",sans-serif;
@@ -1282,12 +1283,12 @@ input.radio_input:not(:checked) + label:after {
 .white_popup_block .contacts_data form input.third {
     margin-bottom: 0;
 }
-.white_popup_block .contacts_data form input:invalid {
+/*.white_popup_block .contacts_data form input:invalid {
     border: 3px solid rgb(251, 1, 105);
 }
 .white_popup_block .contacts_data form input:invalid + label {
     color: rgb(251, 1, 105);
-}
+}*/
 .white_popup_block .contacts_data form input::placeholder {
     color: #5d627b;
     font-size: 14px;
@@ -1481,10 +1482,37 @@ input.radio_input:not(:checked) + label:after {
 .white_popup_block .mobile-back {
     display: none;
 }
+#popup2 {
+    width: 500px;
+    position: relative;
+}
+#popup2 label.title span {
+    font-size: 13px;
+}
+#popup2 .contacts_data {
+    display: flex;
+    justify-content: center;
+}
+#popup2.white_popup_block .contacts_data form input.input_text {
+    width: 100%;
+}
+#popup2.white_popup_block .the_outcome {
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    margin-top: 30px;
+}
+#popup2.white_popup_block .the_outcome  .button1 {
+    margin-left: 0;
+}
+
+#popup2 .popup-title {
+    margin-bottom: 35px;
+}
 #popup {
     position: relative;
 }
-#popup .mfp-close  {
+.white_popup_block .mfp-close  {
     color: rgb(159, 158, 159);
     width:22px;
     height: 22px;
@@ -1495,3 +1523,4 @@ input.radio_input:not(:checked) + label:after {
     background-size: cover;
     font-size: 0;
 }
+

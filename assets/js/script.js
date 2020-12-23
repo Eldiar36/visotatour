@@ -197,3 +197,9 @@ var maskOptions = {
     lazy: false
 };
 var mask = new IMask(element, maskOptions);
+var element1 = document.getElementById('phone1');
+var maskOptions = {
+    mask: '+7(000)000-00-00',
+    lazy: false
+};
+var mask1 = new IMask(element1, maskOptions);

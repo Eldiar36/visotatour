@@ -109,7 +109,9 @@
         line-height: 24px;
         margin-bottom: 15px;
     }
-
+    #company-description .content_toggle {
+        margin-bottom: 20px;
+    }
     #youtube-video {
         padding: 45px 0 50px 0;
     }
@@ -378,6 +380,22 @@
         position: absolute;
         right: 27px;
         top: 25px;
+    }
+    #popup2 {
+        width: 100%;
+        padding: 28px 41px 30px 41px;
+    }
+    #popup2 .contacts_data form .input_text {
+        box-shadow: 0 3px 24px 0 rgba(0, 0, 0, 0.35);
+        margin-bottom: 15px;
+    }
+    #popup2.white_popup_block .the_outcome {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    #popup2 .box_polityc {
+        display: flex;
+        margin-top: 25px;
     }
     .mfp-content {
         padding: 30px 0;
