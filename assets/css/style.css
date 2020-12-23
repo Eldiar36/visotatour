@@ -8,7 +8,6 @@
 * {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
     outline: none !important;
     box-sizing: border-box;
 }
@@ -1286,7 +1285,7 @@ input.radio_input:not(:checked) + label:after {
 .white_popup_block .contacts_data form input:invalid {
     border: 3px solid rgb(251, 1, 105);
 }
-.white_popup_block .contacts_data form input:invalid label {
+.white_popup_block .contacts_data form input:invalid + label {
     color: rgb(251, 1, 105);
 }
 .white_popup_block .contacts_data form input::placeholder {
