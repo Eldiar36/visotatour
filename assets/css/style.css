@@ -188,15 +188,7 @@ main{
     font-weight: 700;
     margin-top: 50px;
 }
-#company-description  .section-title-wrap{
-    margin-bottom: 37px;
-}
-#company-description .text-box p {
-    font-size: 16px;
-    color: #525252;
-    line-height: 25px;
-    margin-bottom: 38px;
-}
+
 #select-route {
     padding: 0 0 59px 0;
 }
@@ -509,6 +501,32 @@ input.radio_input:not(:checked) + label:after {
     font-size: 15px;
     line-height: 25px;
 }
+#company-description  .section-title-wrap{
+    margin-bottom: 3px;
+}
+#company-description .text-box .item {
+    margin-bottom: 25px;
+}
+#company-description .item .title {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+#company-description .item .info {
+    font-size: 16px;
+    color: #525252;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+#company-description .item .info p span,
+#company-description .item .info ul li span {
+    font-weight: 700;
+}
+#company-description .item .info ul li {
+    padding: 3px 0;
+}
+#company-description .item .info p {
+    margin-bottom: 10px;
+}
 #company-description .text-box p:last-child{
     margin-bottom: 0;
 }
@@ -518,6 +536,11 @@ input.radio_input:not(:checked) + label:after {
 }
 #company-description .box_img img:first-child {
     margin-bottom: 20px;
+}
+#company-description .content_block.hide {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
 }
 #youtube-video {
     padding: 68px 0 63px 0;
@@ -609,6 +632,14 @@ input.radio_input:not(:checked) + label:after {
 {
     font-style: italic;
 }
+#services .third.row {
+    margin-bottom: 50px;
+}
+#services .button1 {
+    margin:  0 auto;
+    width: 214px;
+    color: #ffffff;
+}
 #services .box .price {
     font-size: 16px;
     color: #ffffff;
@@ -635,7 +666,7 @@ input.radio_input:not(:checked) + label:after {
     color: #333333;
     font-size: 19px;
     font-weight: 700;
-    margin-bottom: 38px;
+
 }
 #faq .box .faq_answer  {
     position: relative;
@@ -660,7 +691,7 @@ input.radio_input:not(:checked) + label:after {
     height: 140px;
     z-index: 274;
 }
-#faq .content_toggle {
+ .content_toggle {
     border: 2px solid rgb(161, 161, 161);
     border-radius: 3px;
     position: relative;
@@ -674,7 +705,7 @@ input.radio_input:not(:checked) + label:after {
     justify-content: center;
     margin: 30px auto 0 auto;
 }
-#faq .content_toggle img {
+ .content_toggle img {
     margin-left: 5px;
     margin-bottom: -5px;
 }

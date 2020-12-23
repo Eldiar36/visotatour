@@ -56,16 +56,39 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
+    $(".preview-img").owlCarousel({
+        items: 4,
+        loop:true,
+        margin:0,
+        nav:true,
+        dots:false,
+        responsive: {
+            0:{
+                items:2
+            },
+            480:{
+                items:3
+            },
+            767:{
+                items:4
+            }
+        }
+
+    });
+$(document).ready(function(){
     $('.content_toggle').click(function(){
         $('.content_block').toggleClass('hide');
         if ($('.content_block').hasClass('hide')) {
             $('.content_toggle').html('Показать еще <img style="width: 17px;height: 9px" src="assets/images/arrow_down.png" alt=""> ');
-        } else {
+        }
+        else {
             $('.content_toggle').html('Скрыть');
         }
         return false;
     });
 });
+
+
 (function($) {
     $(function() {
         $("ul.tabs__caption").on("click", "li:not(.active)", function() {
@@ -99,26 +122,7 @@ $(document).ready(function(){
 
 /*let a = */
 
-$(document).ready(function(){
-    $(".preview-img").owlCarousel({
-        items: 4,
-        loop:true,
-        margin:0,
-        nav:true,
-        dots:false,
-        responsive: {
-            0:{
-                items:2
-            },
-            480:{
-                items:3
-            },
-            767:{
-                items:4
-            }
-        }
 
-    });
 let bigImg = document.querySelector('.full-img');
 let subImg = document.querySelector('.preview-img').getElementsByTagName("img");
 
