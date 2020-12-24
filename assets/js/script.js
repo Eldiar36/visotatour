@@ -92,6 +92,23 @@ $(document).ready(function() {
         return false;
     });
 });
+    $(document).ready(function() {
+        $('.content_toggle1').click(function () {
+            $('.content_block1').toggleClass('hide');
+            if ($('.content_block1').hasClass('hide')) {
+                $('.content_toggle1').html('Показать еще <img style="width: 17px;height: 9px" src="assets/images/arrow_down.png" alt=""> ');
+            } else {
+                $('.content_toggle1').html('Скрыть');
+                $('.content_toggle1').toggleClass('scroll-top1')
+                $(".scroll-top1").click(function () {
+                    elementClick = $(this).attr("href");
+                    destination = $(elementClick).offset().top;
+                    $("body,html").scrollTop( destination);
+                });
+            }
+            return false;
+        });
+    });
 
 
 

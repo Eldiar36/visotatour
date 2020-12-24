@@ -676,12 +676,14 @@ input.radio_input:not(:checked) + label:after {
     line-height: 25px;
 }
 
-#faq .box .question-wrap.hide {
+ .content_block.hide ,
+ #faq .content_block1.hide {
     height: 300px;
     overflow: hidden;
     position: relative;
 }
-.question-wrap.hide:after {
+.content_block.hide:after ,
+.content_block1.hide:after {
     content: "";
     background-image: url("../images/Layer 794.png");
     position: absolute;
@@ -690,7 +692,8 @@ input.radio_input:not(:checked) + label:after {
     height: 140px;
     z-index: 274;
 }
- .content_toggle {
+ .content_toggle,
+ .content_toggle1 {
     border: 2px solid rgb(161, 161, 161);
     border-radius: 3px;
     position: relative;
@@ -704,7 +707,8 @@ input.radio_input:not(:checked) + label:after {
     justify-content: center;
     margin: 30px auto 0 auto;
 }
- .content_toggle img {
+ .content_toggle img ,
+ .content_toggle1 img {
     margin-left: 5px;
     margin-bottom: -5px;
 }
