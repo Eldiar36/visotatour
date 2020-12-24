@@ -434,7 +434,7 @@
         background: url("../images/mainoffer-bg-mobile.png")no-repeat;
         background-size: cover;
         height: 100%;
-        padding: 52px 0 46px 42px;
+        padding: 52px 42px 46px 42px;
     }
     #main_offer .main_offer-box:before {
         clip-path: polygon(0 0, 100% 0, 100% 42%, 0 53%);
@@ -454,7 +454,7 @@
         display: block;
     }
     #main_offer .main_offer-box .button1 {
-        margin-top: 240px;
+        margin: 240px auto 0 auto;
     }
     #select-route .box {
          padding: 15px 10px 15px 10px;
