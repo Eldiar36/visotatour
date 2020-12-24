@@ -523,11 +523,15 @@
         width: 120px;
         height: 70px;
     }
-    .section-title:before{
-        display: none;
+    .section-title:before {
+        left: -35px;
+        width: 20px;
+        top: 46%;
     }
     .section-title:after {
-        display: none;
+        right: -35px;
+        width: 20px;
+        top: 46%;
     }
     #company-description .section-title-wrap {
         margin-bottom: 20px;
