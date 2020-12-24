@@ -265,7 +265,7 @@ input.radio_input:not(:checked) + label:after {
     width: 12px;
     height: 12px;
     border-radius: 100%;
-    background-color: #e145a3;
+    background-color: #fb0169;
 }
 input.radio_input:not(:checked) + label:after,
 input.radio_input:not(:checked) + label:after {
